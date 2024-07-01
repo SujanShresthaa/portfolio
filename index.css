@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+}
+
+body {
+    background-color: rgb(10, 5, 20);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px; 
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    /* background-color: #f2fcec; */
+    }
+
+.nameLogo {
+    font-size: 2em;  
+    color: #fff;
+    /* color: black; */
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px; 
+    /* color: black; */
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    width: 105%;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .6s;
+ } 
+
+ .navigation a:hover::after {
+    transform-origin:left;
+    transform: scaleX(1);
+ }
+
+#home {
+    height: 100vh;
+    width: 100%;
+}
+
+.box {
+    margin: 6%;
+    height: 75vh;
+    width: 87%;
+    background-color: rgb(10, 5, 15);
+    border-radius: 15px;
+    box-shadow: 5px 5px 50px rgb(56, 55, 55);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.nameIntro {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #f2fcec;
+}
+
+.intro .spanbox {
+    color: #f2fcec;
+    font-size: 1.5em;
+    margin-top: 100px;
+}
+
+.box img {
+    border-radius: 90px;
+    height: 320px; 
+    width: auto; 
+    margin: 20px 20px;
+}
+
+/* Resume */
+
+#resume {
+    height: 100vh auto;
+    width: 100%;
+    background-color: rgb(20, 4, 54);
+    padding-bottom:5px;
+}
+
+.resumeClass {
+    color: #f2fcec;
+    height: 100%;
+    padding-left: 50px;
+}
+.resumeIntro{
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 30px 0;
+}
+.resumeCoding ,
+.resumeGuitar ,
+.resumeAstro  {
+    margin: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 50px;
+    font-size: 1.2rem;
+}
+.resumeCoding img,
+.resumeGuitar img,
+.resumeAstro img {
+    width: 100%;
+    height: auto; 
+    border-radius: 15px;
+    max-width: 250px; 
+    max-height: 250px;
+    object-fit: cover;
+    margin: 0 20px;
+}
+
+/* portfolio css */
+#portfolio{
+    height: 100vh auto;
+    width: 100%;
+}
+.portfolioIntro{
+    color: #f2fcec;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 30px 0;
+}
