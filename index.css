@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Arvo', serif;
 }
@@ -13,17 +14,17 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 50px; 
+    padding: 13px 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 99;
-    /* background-color: #f2fcec; */
-    }
+}
 
 .nameLogo {
-    font-size: 2em;  
+    font-size: 2em;
     color: #fff;
-    /* color: black; */
     user-select: none;
     text-decoration: none;
     cursor: pointer;
@@ -35,11 +36,10 @@ header {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin: 0 20px; 
-    /* color: black; */
+    margin: 0 20px;
 }
 
-.navigation a::after{
+.navigation a::after {
     content: '';
     position: absolute;
     width: 105%;
@@ -50,120 +50,265 @@ header {
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
-    transition: transform .6s;
- } 
+    transition: transform 0.6s;
+}
 
- .navigation a:hover::after {
-    transform-origin:left;
+.navigation a:hover::after {
+    transform-origin: left;
     transform: scaleX(1);
- }
+}
 
-
- /* home css */
+/* home css */
 #home {
     height: 100vh;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
 }
 
 .box {
-    margin: 6%;
-    height: 75vh;
-    width: 87%;
-    background-color: rgb(10, 5, 15);
-    border-radius: 15px;
-    box-shadow: 5px 5px 50px rgb(56, 55, 55);
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 50px;
+    width: 85%;
+    background-color: rgb(10, 5, 15);
+    border-radius: 15px;
+    box-shadow: 5px 5px 50px rgb(56, 55, 55);
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
+    margin-top: 50px;
 }
 
 .nameIntro {
     font-size: 2.5rem;
     font-weight: 700;
-    margin: 0;
     color: #f2fcec;
 }
-.intro h1{
+
+.intro h1 {
     color: #fff;
     font-size: 2rem;
-
+    margin: 10px 0;
 }
 
-.intro ,.auto-type{
+.auto-type {
     color: #fff724;
-    
 }
+
 .box img {
     border-radius: 90px;
-    height: 320px; 
-    width: auto; 
-    margin: 20px 0px 20px 20px ;
+    height: 320px;
+    width: auto;
+    margin: 20px 0;
 }
 
 /* Resume */
-
 #resume {
-    height: 100vh auto;
-    width: 100%;
+    padding: 50px 20px;
     background-color: rgb(20, 4, 54);
-    padding-bottom:5px;
+    border: 15px solid rgb(10, 5, 20) ;
+    border-radius: 20px;
+    color: #f2fcec;
 }
 
 .resumeClass {
-    color: #f2fcec;
-    height: 100%;
-    padding-left: 50px;
-}
-.resumeIntro{
-    font-weight: 600;
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 30px 0;
-}
-.resumeCoding ,
-.resumeGuitar ,
-.resumeAstro  {
-    margin: 0 25px;
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin: 50px;
-    font-size: 1.2rem;
-}
-.resumeCoding img,
-.resumeGuitar img,
-.resumeAstro img {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: auto; 
-    border-radius: 15px;
-    max-width: 250px; 
-    max-height: 250px;
-    object-fit: cover;
-    margin: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-/* portfolio css */
-#portfolio{
-    height: 100vh auto;
+.resumeIntro {
     width: 100%;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
-.portfolioIntro{
+
+.resumeCoding, .resumeGuitar, .resumeAstro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.resumeCoding img, .resumeGuitar img, .resumeAstro img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    max-width: 250px;
+    margin: 20px;
+}
+
+/* Portfolio */
+#portfolio {
+    padding: 50px 20px;
+}
+
+.portfolioIntro {
     color: #f2fcec;
     font-weight: 600;
     font-size: 2.5rem;
     text-align: center;
-    padding: 30px 0;
+    margin-bottom: 30px;
 }
-.projectSolar{
-    width: 100%;
-    flex: 1;
-    height: auto; 
+
+.projectGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projectSolar {
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(33% - 40px);
+    height: auto;
     border-radius: 15px;
-    max-width: 20px; 
-    max-height: 20px;
-    object-fit: cover;
-    margin: 0 20px;
 }
+
+.projectSolar img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    max-width: 300px;
+    margin: 20px;
+}
+.cs{
+    display: flex;
+}
+
+/* contact section and skills */
+#skills{
+    height: 50vh;
+    width: 40%;
+    background-color: rgb(20, 4, 54);
+    border: 15px solid rgb(10, 5, 20) ;
+    border-radius: 20px;
+    padding: 25px 20px;
+}
+#contact{
+    height: 50vh;
+    width: 60%;
+    background-color: rgb(20, 4, 54);
+    border: 15px solid rgb(10, 5, 20) ;
+    border-radius: 20px;
+    padding: 25px 20px;
+}
+#skills{
+    color: #f2fcec;
+}
+.skill{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.skillName{
+    color: #f2fcec;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 10px 20px; 
+    text-decoration: underline;
+}
+.skillsLabel{
+    font-size: 1.5em;
+    font-weight: 600;
+    position: relative;
+    margin: 20px 50px;
+}
+.htmlradio, .jsradio, .cssradio, .sqlradio, .phpradio { 
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 10px 50px;
+}
+
+.htmlradio{
+    background-color: rgb(227, 76, 38);
+}
+
+.cssradio{
+    background-color:rgb(86, 61, 124) ;
+}
+
+.jsradio{
+    background-color: rgb(241, 224, 90); 
+}
+
+.phpradio{
+    background-color: rgb(79, 93, 149);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navigation a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    .nameIntro {
+        font-size: 2rem;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .resumeCoding, .resumeGuitar, .resumeAstro {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .resumeCoding img, .resumeGuitar img, .resumeAstro img {
+        max-width: 200px;
+    }
+
+    .projectSolar {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* @media (max-width: 480px) {
+    header {
+        padding: 20px;
+    }
+
+    .nameLogo {
+        font-size: 1.5em;
+    }
+
+    .navigation a {
+        font-size: 0.9em;
+        margin: 0 5px;
+    }
+
+    .box img {
+        height: 200px;
+    }
+
+    .nameIntro {
+        font-size: 1.5rem;
+    }
+
+    .intro h1 {
+        font-size: 1.2rem;
+    }
+
+    .resumeCoding img, .resumeGuitar img, .resumeAstro img {
+        max-width: 150px;
+    }
+
+    .portfolioIntro {
+        font-size: 2rem;
+    }
+} */
