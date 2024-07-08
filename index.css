@@ -178,45 +178,51 @@ header {
 
 .projectSolar img {
     width: 100%;
-    height: auto;
-    border-radius: 15px;
-    max-width: 300px;
-    margin: 20px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 .cs{
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* contact section and skills */
-#skills{
-    height: auto;
-    width: 40%;
+#skills {
+    flex: 1;
     background-color: rgb(20, 4, 54);
-    border: 15px solid rgb(10, 5, 20) ;
+    border: 15px solid rgb(10, 5, 20);
     border-radius: 20px;
     padding: 25px 20px;
+    margin: 20px;
+    min-width: 300px;
 }
-#skills{
+
+#skills {
     color: #f2fcec;
 }
-.skill{
+
+.skill {
     display: flex;
     align-items: center;
     margin: 0;
 }
-.skillName{
+
+.skillName {
     color: #f2fcec;
     font-size: 1.5em;
     font-weight: 500;
     margin: 10px 20px; 
     text-decoration: underline;
 }
-.skillsLabel{
+
+.skillsLabel {
     font-size: 1.5em;
     font-weight: 600;
     position: relative;
     margin: 20px 50px;
 }
+
 .htmlradio, .jsradio, .cssradio, .sqlradio, .phpradio { 
     height: 10px;
     width: 10px;
@@ -224,23 +230,23 @@ header {
     margin: 10px 20px 10px 70px;
 }
 
-.htmlradio{
+.htmlradio {
     background-color: rgb(227, 76, 38);
 }
 
-.cssradio{
-    background-color:rgb(86, 61, 124) ;
+.cssradio {
+    background-color: rgb(86, 61, 124);
 }
 
-.jsradio{
+.jsradio {
     background-color: rgb(241, 224, 90); 
 }
 
-.phpradio{
+.phpradio {
     background-color: rgb(79, 93, 149);
 }
 
-.htmlbox{
+.htmlbox {
     height: 5px;
     width: 90px;
     background-color: #f2fcec;
@@ -248,14 +254,16 @@ header {
     border-radius: 30px;
     margin-left: 10px;
 }
-.htmlbox2{
+
+.htmlbox2 {
     height: 5px;
     width: 80px;
     border: none;
     background-color: rgb(227, 75, 38);
     border-radius: 30px;
 }
-.cssbox2{
+
+.cssbox2 {
     height: 5px;
     width: 60px;
     border: none;
@@ -263,14 +271,15 @@ header {
     border-radius: 30px;
 }
 
-.jsbox2{
+.jsbox2 {
     height: 5px;
     width: 60px;
     border: none;
     background-color: rgb(241, 224, 90);
     border-radius: 30px;
 }
-.phpbox2{
+
+.phpbox2 {
     height: 5px;
     width: 50px;
     border: none;
@@ -278,56 +287,65 @@ header {
     border-radius: 30px;
 }
 
-#contact{
-    height: auto;
-    width: 60%;
+#contact {
+    flex: 1;
     background-color: rgb(20, 4, 54);
-    border: 15px solid rgb(10, 5, 20) ;
+    border: 15px solid rgb(10, 5, 20);
     border-radius: 20px;
     padding: 25px 20px;
+    margin: 20px;
+    min-width: 300px;
 }
 
-.connectMsg{
+.connectMsg {
     color: #f2fcec;
     font-size: 1.5em;
     font-weight: 600;
 }
 
-#contact form{
+#contact form {
     width: 100%;   
 }
-.contactMsg{
+
+.contactMsg {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 0px;
 }
 
-.forEmail{
-    width: 48%;
+.forEmail {
+    flex: 1 1 48%;
+    min-width: 200px;
+    margin-bottom: 20px;
 }
-.enterEmailMsg{
+
+.enterEmailMsg {
     color: #f2fcec;
     font-size: 1em;
 }
-.forEmail input{
+
+.forEmail input {
     width: 100%;
     min-height: 50px;
     margin: 10px 0;
     border-radius: 5px;
-    padding:0px 20px;
+    padding: 0px 20px;
 }
-.forEmailMsg{
+
+.forEmailMsg {
     width: 100%;
 }
-.forEmailMsg textarea{
+
+.forEmailMsg textarea {
     width: 100%;
     min-height: 80px;
     margin: 10px 0;
     border-radius: 5px;
     padding: 10px 15px;
 }
-.btnn{
+
+.btnn {
     width: 100%;
     background-color: black;
     color: #f2fcec;
@@ -338,7 +356,6 @@ header {
     border-radius: 5px;
     margin: 10px 0;
 }
-
 /* footer */
 .footer{
     width: 100%;
