@@ -325,6 +325,7 @@ header {
     min-height: 80px;
     margin: 10px 0;
     border-radius: 5px;
+    padding: 10px 15px;
 }
 .btnn{
     width: 100%;
