@@ -393,9 +393,13 @@ footer ul#social a:hover{
 .copyRight{
     text-align: center;
     margin: 15px 0 ;
+    color: #f2fcec;
 }
 /* Media Queries */
 @media (max-width: 768px) {
+    .box{
+    width: auto;
+    }
     .navigation a {
         font-size: 1em;
         margin: 0 10px;
