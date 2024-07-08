@@ -189,16 +189,8 @@ header {
 
 /* contact section and skills */
 #skills{
-    height: 50vh;
+    height: auto;
     width: 40%;
-    background-color: rgb(20, 4, 54);
-    border: 15px solid rgb(10, 5, 20) ;
-    border-radius: 20px;
-    padding: 25px 20px;
-}
-#contact{
-    height: 50vh;
-    width: 60%;
     background-color: rgb(20, 4, 54);
     border: 15px solid rgb(10, 5, 20) ;
     border-radius: 20px;
@@ -229,7 +221,7 @@ header {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    margin: 10px 50px;
+    margin: 10px 20px 10px 70px;
 }
 
 .htmlradio{
@@ -248,6 +240,142 @@ header {
     background-color: rgb(79, 93, 149);
 }
 
+.htmlbox{
+    height: 5px;
+    width: 90px;
+    background-color: #f2fcec;
+    border: none;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+.htmlbox2{
+    height: 5px;
+    width: 80px;
+    border: none;
+    background-color: rgb(227, 75, 38);
+    border-radius: 30px;
+}
+.cssbox2{
+    height: 5px;
+    width: 60px;
+    border: none;
+    background-color: rgb(86, 61, 124);
+    border-radius: 30px;
+}
+
+.jsbox2{
+    height: 5px;
+    width: 60px;
+    border: none;
+    background-color: rgb(241, 224, 90);
+    border-radius: 30px;
+}
+.phpbox2{
+    height: 5px;
+    width: 50px;
+    border: none;
+    background-color: rgb(79, 93, 149);
+    border-radius: 30px;
+}
+
+#contact{
+    height: auto;
+    width: 60%;
+    background-color: rgb(20, 4, 54);
+    border: 15px solid rgb(10, 5, 20) ;
+    border-radius: 20px;
+    padding: 25px 20px;
+}
+
+.connectMsg{
+    color: #f2fcec;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#contact form{
+    width: 100%;   
+}
+.contactMsg{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.forEmail{
+    width: 48%;
+}
+.enterEmailMsg{
+    color: #f2fcec;
+    font-size: 1em;
+}
+.forEmail input{
+    width: 100%;
+    min-height: 50px;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding:0px 20px;
+}
+.forEmailMsg{
+    width: 100%;
+}
+.forEmailMsg textarea{
+    width: 100%;
+    min-height: 80px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.btnn{
+    width: 100%;
+    background-color: black;
+    color: #f2fcec;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    background: #e2e9fc;
+    border: 15px solid rgb(10, 5, 20) ;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+footer ul{
+    list-style: none;
+}
+footer ul#social{
+    list-style: none;
+    text-align: right;
+}
+footer ul#social li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+footer ul#social a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+
+}
+footer ul#social a:hover{
+    text-decoration: none;
+    color: #527cec;
+}
+
+.copyRight{
+    text-align: center;
+    margin: 15px 0 ;
+}
 /* Media Queries */
 @media (max-width: 768px) {
     .navigation a {
