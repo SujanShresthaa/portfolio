@@ -58,6 +58,46 @@ header {
     transform: scaleX(1);
 }
 
+
+header .menuLogo{
+    font-size: 1.5rem;
+    color: #f2fcec;
+    display: none;
+    cursor: pointer;
+}
+
+.navigation1 a {
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    display: none;
+}
+@media (max-width: 768px) {
+
+    .nameLogo{
+    font-size: 1.5em;
+    color: #fff;
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    .navigation a{
+        display: none;
+    }
+    .navigation1 a {
+        font-size: 1em;
+        margin: 0 10px;
+        display: list-item;
+        list-style: none;
+    }
+    header .menuLogo{
+        display: block;
+    }
+}
+
 /* home css */
 /* #home {
     height: 100vh;
@@ -99,7 +139,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 100px;
+    padding: 0px 90px;
     width: 80%;
     border-radius: 15px;
     box-shadow: 5px 5px 50px rgb(56, 55, 55);
@@ -149,7 +189,7 @@ header {
 .intro h1 {
     color: #fff;
     font-size: 1rem;
-    margin: 10px 0;
+    margin: 10px 20px 10px 0;
     font-weight: 400;
 }
 
@@ -158,7 +198,7 @@ header {
 }
 
 .box img {
-    border-radius: 90px;
+    border-radius: 80px;
     height: 320px;
     width: auto;
     margin: 20px 0;
@@ -483,6 +523,7 @@ footer ul#social a:hover{
     text-align: center;
     margin: 15px 0 ;
     color: #f2fcec;
+    font-size: 0.8rem;
 }
 /* Media Queries */
 @media (max-width: 768px) {
@@ -491,11 +532,6 @@ footer ul#social a:hover{
     justify-content: space-around;
     padding: 0px 30px;
     }
-    .navigation a {
-        font-size: 1em;
-        margin: 0 10px;
-    }
-
     .nameIntro {
         font-size: 2rem;
         font-family: 500;
@@ -517,6 +553,10 @@ footer ul#social a:hover{
     .projectSolar {
         flex: 1 1 100%;
         max-width: 100%;
+    }
+    #social li{
+        display: inline-block;
+        text-decoration: none;
     }
 }
 
