@@ -12,24 +12,25 @@
 </head>
 <body>
     <header>
-        <h2 class="nameLogo">Sujan Shrestha</h2>
-        <nav class="navigation">
-            <a href="#home">Home</a>
-            <a href="#resume">Resume</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>        
-    <ion-icon id="app" class="menuLogo" name="menu-outline">
-        <nav id="nav1" class="navigation1">
-            <a href="#home">Home</a>
-            <a href="#resume">Resume</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>        
-    </ion-icon>
-    </header>
+    <h2 class="nameLogo">Sujan Shrestha</h2>
+    <nav class="navigation">
+        <a href="#home">Home</a>
+        <a href="#resume">Resume</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>        
+    <ion-icon id="app" class="menuLogo" name="menu-outline"></ion-icon>
+</header>
+<nav class="navigation1" id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#resume">Resume</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    
     <section id="home">
         <div class="box">
             <div class="intro">
@@ -134,7 +135,7 @@
     <div class="footer">
         <ul>
             <li><strong>Email:</strong> sujanstha5732@gmail.com</li>
-            <li><strong>Phone:</strong> +9779823254541</li>
+            <li><strong>Phone:</strong> +977 9823254541</li>
         </ul>
         <ul id="social">
             <li><a href="https://www.facebook.com/profile.php?id=100067735404970" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
@@ -153,10 +154,16 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
         var typed = new Typed(".auto-type", {
-            strings: ["Developer", "Singer", "Designer", "young motivated boy with a great enthusiasm for learning, coding, and facing challenges...."],
+            strings: ["Developer", "Prorgrammer", "Designer", "young motivated boy with a great enthusiasm for learning, coding, and facing challenges...."],
             typeSpeed: 90,
             backSpeed: 90,
             loop: true
+        });
+    </script>
+    <script>
+        document.getElementById('app').addEventListener('click', function() {
+            var nav1 = document.getElementById('nav1');
+            nav1.classList.toggle('show');
         });
     </script>
 </body>

@@ -8,17 +8,15 @@
 body {
     background-color: rgb(10, 5, 20);
 }
-
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 12px 50px 12px 100px;
+    padding: 15px 50px 12px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
     z-index: 99;
 }
 
@@ -31,12 +29,12 @@ header {
 }
 
 .navigation a {
-    position: relative;
     font-size: 1rem;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     margin: 0 20px;
+    position: relative; /* Ensure the ::after element is positioned correctly */
 }
 
 .navigation a::after {
@@ -58,57 +56,71 @@ header {
     transform: scaleX(1);
 }
 
-
-header .menuLogo{
+header .menuLogo {
     font-size: 1.5rem;
     color: #f2fcec;
     display: none;
     cursor: pointer;
 }
 
+.navigation1 {
+    display: none;
+    background-color: #008;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 98;
+}
+
 .navigation1 a {
-    position: relative;
-    font-size: 1rem;
+    display: block;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin: 0 20px;
-    display: none;
+    margin: 10px 0;
 }
-@media (max-width: 768px) {
 
-    .nameLogo{
-    font-size: 1.5em;
-    color: #fff;
-    user-select: none;
-    text-decoration: none;
-    cursor: pointer;
+/* Keep the hover effect for .navigation1 links */
+.navigation1 a::after {
+    content: '';
+    position: absolute;
+    width: 105%;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.6s;
+}
+
+.navigation1 a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+@media (max-width: 830px) {
+    header {
+        padding: 18px 30px 18px 30px;
+        background-color: #008;
     }
-    .navigation a{
+
+    .nameLogo {
+        font-size: 1.5em;
+    }
+
+    .navigation {
         display: none;
     }
-    .navigation1 a {
-        font-size: 1em;
-        margin: 0 10px;
-        display: list-item;
-        list-style: none;
-    }
-    header .menuLogo{
+
+    header .menuLogo {
         display: block;
     }
 }
-
-/* home css */
-/* #home {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
-    background-image: url(cool.webp);
-    background-size: cover;
-}
- */
 
  #home {
     height: 100vh;
@@ -181,8 +193,8 @@ header .menuLogo{
 }
  */
 .nameIntro {
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 2.4rem;
+    font-weight: 600;
     color: #f2fcec;
 }
 
@@ -531,6 +543,7 @@ footer ul#social a:hover{
     width: auto;
     justify-content: space-around;
     padding: 0px 30px;
+    margin: 0 10px;
     }
     .nameIntro {
         font-size: 2rem;

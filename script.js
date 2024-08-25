@@ -1,4 +1,10 @@
-var code= document.getElementById('app'); //menu logo
-var code1= document.getElementById('nav1'); //navugation
+const app = document.getElementById('app');
+const navMenu = document.getElementById('navMenu');
 
-code.addEventListener('click') = code1.style.display('list-item');
+app.addEventListener('click', function() {
+    if (navMenu.style.display === 'block') {
+        navMenu.style.display = 'none';
+    } else {
+        navMenu.style.display = 'block';
+    }
+});
