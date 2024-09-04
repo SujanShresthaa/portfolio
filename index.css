@@ -269,7 +269,13 @@ header .menuLogo {
 .codingIntro,.guitarIntro, .astroIntro{
     width: 230px;
 }
-
+.wannaKnow{
+    margin-top:50px;
+    font-size: 1.3rem;
+}
+.wannaKnow a{
+    color: purple;
+}
 
 
 /* Portfolio */
