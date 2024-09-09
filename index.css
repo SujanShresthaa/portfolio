@@ -408,7 +408,7 @@ header .menuLogo {
 
 .htmlbox2 {
     height: 5px;
-    width: 80px;
+    width: 60px;
     border: none;
     background-color: rgb(227, 75, 38);
     border-radius: 30px;
@@ -439,7 +439,7 @@ header .menuLogo {
 }
 .sqlbox2{
     height: 5px;
-    width: 50px;
+    width: 70px;
     border: none;
     background-color: rgb(6, 63, 2);
     border-radius: 30px;
