@@ -437,6 +437,13 @@ header .menuLogo {
     background-color: rgb(79, 93, 149);
     border-radius: 30px;
 }
+.sqlbox2{
+    height: 5px;
+    width: 50px;
+    border: none;
+    background-color: rgb(6, 63, 2);
+    border-radius: 30px;
+}
 
 #contact {
     flex: 1;
