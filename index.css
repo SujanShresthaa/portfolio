@@ -234,7 +234,7 @@ header .menuLogo {
 .resumeClass{
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    /* margin: 20px; */
     /* box-shadow: 5px 5px 50px rgb(56, 55, 55); */
     border-radius: 10px;
 }
@@ -244,7 +244,7 @@ header .menuLogo {
 }
 .myself{
     position: relative;
-    margin-right: 30px;
+    /* margin-right: 30px; */
 }
 .myself img{
     width: 320px;
@@ -260,6 +260,7 @@ header .menuLogo {
     font-family: serif;
     padding: 30px 0;
     font-size: 1.2rem;
+    overflow-wrap: break-word;
 }
 .wannaKnow{
     font-size: 1.3rem;
@@ -279,10 +280,15 @@ header .menuLogo {
         margin-left: 0;
         text-align: center;
         padding: 10px 0;
+        text-align: justify; 
     }
     .briefs {
-        margin: 10px -10px;
+        margin:10px 0;
         font-size: 0.9rem;
+    }
+    .myself{
+        position: relative;
+        margin-top: 20px;
     }
     .myself img {
         width: 250px;
@@ -302,10 +308,12 @@ header .menuLogo {
         font-size: 1.5rem;
         margin-left: 0;
         text-align: center;
-        padding: 5px 0;
+        padding: 5px 0; 
     }
     .briefs{
         font-size: 0.8rem;
+        overflow-wrap: break-word;
+        text-align: justify;
     }
     .wannaKnow {
         font-size: 1.1rem;
