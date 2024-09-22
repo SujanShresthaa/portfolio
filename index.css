@@ -267,7 +267,8 @@ header .menuLogo {
 }
 .wannaKnow a{
     color: purple;
-}@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
     .resumeClass {
         flex-direction: column;
         align-items: center;
@@ -280,7 +281,8 @@ header .menuLogo {
         padding: 10px 0;
     }
     .briefs {
-        margin: 10px 0;
+        margin: 10px -10px;
+        font-size: 0.9rem;
     }
     .myself img {
         width: 250px;
@@ -292,7 +294,6 @@ header .menuLogo {
     #resume {
         padding: 20px;
     }
-
     .myself img {
         width: 200px;
         height: 200px;
@@ -302,6 +303,9 @@ header .menuLogo {
         margin-left: 0;
         text-align: center;
         padding: 5px 0;
+    }
+    .briefs{
+        font-size: 0.9rem;
     }
     .wannaKnow {
         font-size: 1.1rem;
